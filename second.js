@@ -2,6 +2,12 @@ pl1=localStorage.getItem("player1");
 pl2=localStorage.getItem("player2");
 p1s=0;
 p2s=0;
+document.getElementById("player1_name").innerHTML=pl1+" : ";
+document.getElementById("player2_name").innerHTML=pl2+" : ";
+document.getElementById("player1_score").innerHTML=p1s;
+document.getElementById("player2_score").innerHTML=p2s;
+document.getElementById("pq").innerHTML="Question Turn:"+pl1;
+document.getElementById("pa").innerHTML="Answer Turn:"+pl2;
 
 function send() {
     number1=document.getElementById("number1").value;
@@ -24,13 +30,13 @@ function check() {
     if (geta==ranswer) {
         if (at=="player1") {
             np1s=p1s+1;
-document.getElementById("player1_score").innerHTML=pl1+":  "+np1s;
-document.getElementById("player2_score").innerHTML=pl2+":  "+np2s;
+document.getElementById("player1_score").innerHTML=np1s;
+document.getElementById("player2_score").innerHTML=np2s;
         }
         if (at=="player2") {
             np2s=p2s+1;
-document.getElementById("player2_score").innerHTML=pl2+":   "+np2s;
-document.getElementById("player1_score").innerHTML=pl1+":  "+np1s;
+document.getElementById("player2_score").innerHTML=np2s;
+document.getElementById("player1_score").innerHTML=np1s;
         }
     }
     if (qt=="player1") {
