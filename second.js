@@ -14,8 +14,8 @@ function send() {
     row=question+ib+cb;
 
     document.getElementById("output").innerHTML=row;
-    document.getElementById("number1").innerHTML="";
-    document.getElementById("number2").innerHTML="";
+    document.getElementById("number1").value="";
+    document.getElementById("number2").value="";
 }
 qt="player1";
 at="player2";
@@ -49,6 +49,5 @@ document.getElementById("player1_score").innerHTML=pl1+":  "+np1s;
         document.getElementById("pa").innerHTML="Answer   :"+pl1;
         at="player1";
     } 
-    document.getElementById("output").innerHTML="";
-    document.getElementById("input_check_box").innerHTML="";
+    document.getElementById("input_check_box").value="";
 }
