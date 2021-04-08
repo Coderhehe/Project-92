@@ -29,14 +29,14 @@ function check() {
     geta=document.getElementById("input_check_box").value;
     if (geta==ranswer) {
         if (at=="player1") {
-            np1s=p1s+1;
-document.getElementById("player1_score").innerHTML=np1s;
-document.getElementById("player2_score").innerHTML=np2s;
+            p1s=p1s+1;
+document.getElementById("player1_score").innerHTML=p1s;
+document.getElementById("player2_score").innerHTML=p2s;
         }
         if (at=="player2") {
-            np2s=p2s+1;
-document.getElementById("player2_score").innerHTML=np2s;
-document.getElementById("player1_score").innerHTML=np1s;
+            p2s=p2s+1;
+document.getElementById("player2_score").innerHTML=p2s;
+document.getElementById("player1_score").innerHTML=p1s;
         }
     }
     if (qt=="player1") {
